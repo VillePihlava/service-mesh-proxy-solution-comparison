@@ -1,0 +1,224 @@
+{
+  "RunType": "HTTP",
+  "Labels": "b6bec510_qps_100_c_10_d_300_cilium-1",
+  "StartTime": "2023-04-24T19:21:33.089583726Z",
+  "RequestedQPS": "100",
+  "RequestedDuration": "5m0s",
+  "ActualQPS": 99.96917095656352,
+  "ActualDuration": 300092515652,
+  "NumThreads": 10,
+  "Version": "1.38.0",
+  "DurationHistogram": {
+    "Count": 30000,
+    "Min": 0.001198245,
+    "Max": 0.01035376,
+    "Sum": 52.645237762000036,
+    "Avg": 0.0017548412587333345,
+    "StdDev": 0.0001651184211620801,
+    "Data": [
+      {
+        "Start": 0.001198245,
+        "End": 0.002,
+        "Percent": 98.62,
+        "Count": 29586
+      },
+      {
+        "Start": 0.002,
+        "End": 0.003,
+        "Percent": 99.85,
+        "Count": 369
+      },
+      {
+        "Start": 0.003,
+        "End": 0.004,
+        "Percent": 99.98,
+        "Count": 39
+      },
+      {
+        "Start": 0.004,
+        "End": 0.005,
+        "Percent": 99.98333333333333,
+        "Count": 1
+      },
+      {
+        "Start": 0.007,
+        "End": 0.008,
+        "Percent": 99.98666666666666,
+        "Count": 1
+      },
+      {
+        "Start": 0.008,
+        "End": 0.009000000000000001,
+        "Percent": 99.99333333333334,
+        "Count": 2
+      },
+      {
+        "Start": 0.009000000000000001,
+        "End": 0.01,
+        "Percent": 99.99666666666667,
+        "Count": 1
+      },
+      {
+        "Start": 0.01,
+        "End": 0.01035376,
+        "Percent": 100,
+        "Count": 1
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.0016047186604698327
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.0018079690407300998
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.00192991926888626
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.002308943089430893
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0033846153846154433
+      }
+    ]
+  },
+  "ErrorsDurationHistogram": {
+    "Count": 0,
+    "Min": 0,
+    "Max": 0,
+    "Sum": 0,
+    "Avg": 0,
+    "StdDev": 0,
+    "Data": null
+  },
+  "Exactly": 0,
+  "Jitter": false,
+  "Uniform": true,
+  "NoCatchUp": true,
+  "RunID": 0,
+  "AccessLoggerInfo": "mode json to /var/lib/access-logs/access-log-file_cilium-1.json",
+  "ID": "2023-04-24-192133_b6bec510_qps_100_c_10_d_300_cilium_1",
+  "RetCodes": {
+    "200": 30000
+  },
+  "IPCountMap": {
+    "10.96.155.40:80": 10
+  },
+  "Insecure": false,
+  "CACert": "",
+  "Cert": "",
+  "Key": "",
+  "UnixDomainSocket": "",
+  "URL": "http://cilium-ingress-app-ingress.default/",
+  "NumConnections": 1,
+  "Compression": false,
+  "DisableFastClient": false,
+  "HTTP10": false,
+  "DisableKeepAlive": false,
+  "AllowHalfClose": false,
+  "FollowRedirects": false,
+  "Resolve": "",
+  "HTTPReqTimeOut": 3000000000,
+  "UserCredentials": "",
+  "ContentType": "",
+  "Payload": "",
+  "LogErrors": true,
+  "SequentialWarmup": false,
+  "ConnReuseRange": [
+    0,
+    0
+  ],
+  "NoResolveEachConn": false,
+  "Offset": 0,
+  "Resolution": 0.001,
+  "Sizes": {
+    "Count": 30000,
+    "Min": 217,
+    "Max": 217,
+    "Sum": 6510000,
+    "Avg": 217,
+    "StdDev": 0,
+    "Data": [
+      {
+        "Start": 217,
+        "End": 217,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "HeaderSizes": {
+    "Count": 30000,
+    "Min": 166,
+    "Max": 166,
+    "Sum": 4980000,
+    "Avg": 166,
+    "StdDev": 0,
+    "Data": [
+      {
+        "Start": 166,
+        "End": 166,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "Sockets": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "SocketCount": 10,
+  "ConnectionStats": {
+    "Count": 10,
+    "Min": 0.000231172,
+    "Max": 0.000804994,
+    "Sum": 0.003895345,
+    "Avg": 0.00038953450000000004,
+    "StdDev": 0.0001790954168605383,
+    "Data": [
+      {
+        "Start": 0.000231172,
+        "End": 0.000804994,
+        "Percent": 100,
+        "Count": 10
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.00048620399999999995
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.000645599
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.0007412359999999999
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0007986182
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0008043564199999999
+      }
+    ]
+  },
+  "AbortOn": 0
+}

@@ -1,0 +1,212 @@
+{
+  "RunType": "HTTP",
+  "Labels": "8b8214ea_qps_100_c_10_d_300_baseline-2",
+  "StartTime": "2023-04-24T18:33:55.695071055Z",
+  "RequestedQPS": "100",
+  "RequestedDuration": "5m0s",
+  "ActualQPS": 99.968954474573,
+  "ActualDuration": 300093165500,
+  "NumThreads": 10,
+  "Version": "1.38.0",
+  "DurationHistogram": {
+    "Count": 30000,
+    "Min": 0.001178299,
+    "Max": 0.007087706,
+    "Sum": 60.11002877699997,
+    "Avg": 0.002003667625899999,
+    "StdDev": 0.0001387983134595407,
+    "Data": [
+      {
+        "Start": 0.001178299,
+        "End": 0.002,
+        "Percent": 47.346666666666664,
+        "Count": 14204
+      },
+      {
+        "Start": 0.002,
+        "End": 0.003,
+        "Percent": 99.75333333333333,
+        "Count": 15722
+      },
+      {
+        "Start": 0.003,
+        "End": 0.004,
+        "Percent": 99.97333333333333,
+        "Count": 66
+      },
+      {
+        "Start": 0.004,
+        "End": 0.005,
+        "Percent": 99.98666666666666,
+        "Count": 4
+      },
+      {
+        "Start": 0.005,
+        "End": 0.006,
+        "Percent": 99.99666666666667,
+        "Count": 3
+      },
+      {
+        "Start": 0.007,
+        "End": 0.007087706,
+        "Percent": 100,
+        "Count": 1
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.0020506296908790233
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.002527668235593436
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.002813891362422084
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0029856252385192725
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0036666666666667095
+      }
+    ]
+  },
+  "ErrorsDurationHistogram": {
+    "Count": 0,
+    "Min": 0,
+    "Max": 0,
+    "Sum": 0,
+    "Avg": 0,
+    "StdDev": 0,
+    "Data": null
+  },
+  "Exactly": 0,
+  "Jitter": false,
+  "Uniform": true,
+  "NoCatchUp": true,
+  "RunID": 0,
+  "AccessLoggerInfo": "mode json to /var/lib/access-logs/access-log-file_baseline-2.json",
+  "ID": "2023-04-24-183355_8b8214ea_qps_100_c_10_d_300_baseline_2",
+  "RetCodes": {
+    "200": 30000
+  },
+  "IPCountMap": {
+    "10.98.11.97:80": 10
+  },
+  "Insecure": false,
+  "CACert": "",
+  "Cert": "",
+  "Key": "",
+  "UnixDomainSocket": "",
+  "URL": "http://istio-ingressgateway.istio-system/",
+  "NumConnections": 1,
+  "Compression": false,
+  "DisableFastClient": false,
+  "HTTP10": false,
+  "DisableKeepAlive": false,
+  "AllowHalfClose": false,
+  "FollowRedirects": false,
+  "Resolve": "",
+  "HTTPReqTimeOut": 3000000000,
+  "UserCredentials": "",
+  "ContentType": "",
+  "Payload": "",
+  "LogErrors": true,
+  "SequentialWarmup": false,
+  "ConnReuseRange": [
+    0,
+    0
+  ],
+  "NoResolveEachConn": false,
+  "Offset": 0,
+  "Resolution": 0.001,
+  "Sizes": {
+    "Count": 30000,
+    "Min": 223,
+    "Max": 223,
+    "Sum": 6690000,
+    "Avg": 223,
+    "StdDev": 0,
+    "Data": [
+      {
+        "Start": 223,
+        "End": 223,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "HeaderSizes": {
+    "Count": 30000,
+    "Min": 172,
+    "Max": 172,
+    "Sum": 5160000,
+    "Avg": 172,
+    "StdDev": 0,
+    "Data": [
+      {
+        "Start": 172,
+        "End": 172,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "Sockets": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "SocketCount": 10,
+  "ConnectionStats": {
+    "Count": 10,
+    "Min": 0.000146538,
+    "Max": 0.00043175,
+    "Sum": 0.0024910239999999997,
+    "Avg": 0.0002491024,
+    "StdDev": 0.00007537685158880016,
+    "Data": [
+      {
+        "Start": 0.000146538,
+        "End": 0.00043175,
+        "Percent": 100,
+        "Count": 10
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.00027329888888888887
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.00035252444444444446
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.00040005977777777776
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0004285809777777778
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0004314330977777778
+      }
+    ]
+  },
+  "AbortOn": 0
+}

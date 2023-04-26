@@ -1,0 +1,28 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  components:
+    ingressGateways:
+    - enabled: true
+      name: istio-ingressgateway
+      k8s:
+        resources:
+          requests:
+            cpu: 2000m
+            memory: 1Gi
+          limits:
+            cpu: 2000m
+            memory: 1Gi
+        hpaSpec:
+          maxReplicas: 1
+          minReplicas: 1
+  values:
+    global:
+      proxy:
+        resources:
+          requests:
+            cpu: 2000m
+            memory: 1Gi
+          limits:
+            cpu: 2000m
+            memory: 1Gi

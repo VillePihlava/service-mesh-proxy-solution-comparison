@@ -1,0 +1,248 @@
+{
+  "RunType": "HTTP",
+  "Labels": "0c119886_qps_100_c_10_d_300_sidecar-istio-3",
+  "StartTime": "2023-04-24T18:58:58.082813006Z",
+  "RequestedQPS": "100",
+  "RequestedDuration": "5m0s",
+  "ActualQPS": 99.96827430705684,
+  "ActualDuration": 300095207284,
+  "NumThreads": 10,
+  "Version": "1.38.0",
+  "DurationHistogram": {
+    "Count": 30000,
+    "Min": 0.00347379,
+    "Max": 0.017749668,
+    "Sum": 144.839871938,
+    "Avg": 0.004827995731266666,
+    "StdDev": 0.00022758055729447602,
+    "Data": [
+      {
+        "Start": 0.00347379,
+        "End": 0.004,
+        "Percent": 0.02,
+        "Count": 6
+      },
+      {
+        "Start": 0.004,
+        "End": 0.005,
+        "Percent": 95.55,
+        "Count": 28659
+      },
+      {
+        "Start": 0.005,
+        "End": 0.006,
+        "Percent": 99.63666666666667,
+        "Count": 1226
+      },
+      {
+        "Start": 0.006,
+        "End": 0.007,
+        "Percent": 99.94,
+        "Count": 91
+      },
+      {
+        "Start": 0.007,
+        "End": 0.008,
+        "Percent": 99.96,
+        "Count": 6
+      },
+      {
+        "Start": 0.008,
+        "End": 0.009000000000000001,
+        "Percent": 99.96666666666667,
+        "Count": 2
+      },
+      {
+        "Start": 0.009000000000000001,
+        "End": 0.01,
+        "Percent": 99.97333333333333,
+        "Count": 2
+      },
+      {
+        "Start": 0.01,
+        "End": 0.011,
+        "Percent": 99.97666666666667,
+        "Count": 1
+      },
+      {
+        "Start": 0.011,
+        "End": 0.012,
+        "Percent": 99.98333333333333,
+        "Count": 2
+      },
+      {
+        "Start": 0.012,
+        "End": 0.014,
+        "Percent": 99.99,
+        "Count": 2
+      },
+      {
+        "Start": 0.016,
+        "End": 0.017749668,
+        "Percent": 100,
+        "Count": 3
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.004523186433581074
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.004784884329529991
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.004941903067099341
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.005844208809135399
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.006868131868131892
+      }
+    ]
+  },
+  "ErrorsDurationHistogram": {
+    "Count": 0,
+    "Min": 0,
+    "Max": 0,
+    "Sum": 0,
+    "Avg": 0,
+    "StdDev": 0,
+    "Data": null
+  },
+  "Exactly": 0,
+  "Jitter": false,
+  "Uniform": true,
+  "NoCatchUp": true,
+  "RunID": 0,
+  "AccessLoggerInfo": "mode json to /var/lib/access-logs/access-log-file_sidecar-istio-3.json",
+  "ID": "2023-04-24-185857_0c119886_qps_100_c_10_d_300_sidecar_istio_3",
+  "RetCodes": {
+    "200": 30000
+  },
+  "IPCountMap": {
+    "10.110.164.80:80": 10
+  },
+  "Insecure": false,
+  "CACert": "",
+  "Cert": "",
+  "Key": "",
+  "UnixDomainSocket": "",
+  "URL": "http://istio-ingressgateway.istio-system/",
+  "NumConnections": 1,
+  "Compression": false,
+  "DisableFastClient": false,
+  "HTTP10": false,
+  "DisableKeepAlive": false,
+  "AllowHalfClose": false,
+  "FollowRedirects": false,
+  "Resolve": "",
+  "HTTPReqTimeOut": 3000000000,
+  "UserCredentials": "",
+  "ContentType": "",
+  "Payload": "",
+  "LogErrors": true,
+  "SequentialWarmup": false,
+  "ConnReuseRange": [
+    0,
+    0
+  ],
+  "NoResolveEachConn": false,
+  "Offset": 0,
+  "Resolution": 0.001,
+  "Sizes": {
+    "Count": 30000,
+    "Min": 223,
+    "Max": 224,
+    "Sum": 6690005,
+    "Avg": 223.00016666666667,
+    "StdDev": 0.012908868691802598,
+    "Data": [
+      {
+        "Start": 223,
+        "End": 224,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "HeaderSizes": {
+    "Count": 30000,
+    "Min": 172,
+    "Max": 173,
+    "Sum": 5160005,
+    "Avg": 172.00016666666667,
+    "StdDev": 0.012908868537891242,
+    "Data": [
+      {
+        "Start": 172,
+        "End": 173,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "Sockets": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "SocketCount": 10,
+  "ConnectionStats": {
+    "Count": 10,
+    "Min": 0.000206093,
+    "Max": 0.001258424,
+    "Sum": 0.004298117,
+    "Avg": 0.00042981169999999996,
+    "StdDev": 0.000296631613291318,
+    "Data": [
+      {
+        "Start": 0.000206093,
+        "End": 0.001,
+        "Percent": 90,
+        "Count": 9
+      },
+      {
+        "Start": 0.001,
+        "End": 0.001258424,
+        "Percent": 100,
+        "Count": 1
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.0006030465
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.0008511424375
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.001
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0012325816
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0012558397600000001
+      }
+    ]
+  },
+  "AbortOn": 0
+}

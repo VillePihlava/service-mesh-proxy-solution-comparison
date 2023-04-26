@@ -1,0 +1,115 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-server
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: http-server
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: http-server
+      annotations:
+        inject.istio.io/templates: grpc-agent
+        proxy.istio.io/config: '{"holdApplicationUntilProxyStarts": true}'
+    spec:
+      shareProcessNamespace: true
+      containers:
+        - name: http-server
+          image: "${REGISTRY}/proxyless-http-server"
+          env:
+          - name: PORT
+            value: "8080"
+          - name: DEMO_SERVICE_ADDRESS
+            value: "xds:///demo-service:7070"
+          resources:
+            requests:
+              cpu: 2000m
+              memory: 2000Mi
+            limits:
+              cpu: 2000m
+              memory: 2000Mi
+        - name: ubuntu
+          image: "${REGISTRY}/perf-ubuntu"
+          command: ["/bin/sleep"]
+          args: ["1000d"]
+          securityContext:
+            privileged: true
+          resources:
+            requests:
+              cpu: 2000m
+              memory: 2000Mi
+            limits:
+              cpu: 2000m
+              memory: 2000Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: http-server
+spec:
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 8080
+    protocol: TCP
+  selector:
+    app.kubernetes.io/name: http-server
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-service
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: demo-service
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: demo-service
+      annotations:
+        inject.istio.io/templates: grpc-agent
+        proxy.istio.io/config: '{"holdApplicationUntilProxyStarts": true}'
+    spec:
+      shareProcessNamespace: true
+      containers:
+        - name: demo-service
+          image: "${REGISTRY}/proxyless-demo-service"
+          env:
+          - name: PORT
+            value: "7070"
+          resources:
+            requests:
+              cpu: 2000m
+              memory: 2000Mi
+            limits:
+              cpu: 2000m
+              memory: 2000Mi
+        - name: ubuntu
+          image: "${REGISTRY}/perf-ubuntu"
+          command: ["/bin/sleep"]
+          args: ["1000d"]
+          securityContext:
+            privileged: true
+          resources:
+            requests:
+              cpu: 2000m
+              memory: 2000Mi
+            limits:
+              cpu: 2000m
+              memory: 2000Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+spec:
+  ports:
+  - name: grpc
+    port: 7070
+    targetPort: 7070
+    protocol: TCP
+  selector:
+    app.kubernetes.io/name: demo-service

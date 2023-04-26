@@ -1,0 +1,218 @@
+{
+  "RunType": "HTTP",
+  "Labels": "bf162c1c_qps_100_c_10_d_300_proxyless-istio-2",
+  "StartTime": "2023-04-24T18:00:32.824238333Z",
+  "RequestedQPS": "100",
+  "RequestedDuration": "5m0s",
+  "ActualQPS": 99.96916953310829,
+  "ActualDuration": 300092519925,
+  "NumThreads": 10,
+  "Version": "1.38.0",
+  "DurationHistogram": {
+    "Count": 30000,
+    "Min": 0.001170309,
+    "Max": 0.007108638,
+    "Sum": 60.66565351600004,
+    "Avg": 0.002022188450533335,
+    "StdDev": 0.0001557784188924382,
+    "Data": [
+      {
+        "Start": 0.001170309,
+        "End": 0.002,
+        "Percent": 41.36333333333334,
+        "Count": 12409
+      },
+      {
+        "Start": 0.002,
+        "End": 0.003,
+        "Percent": 99.67,
+        "Count": 17492
+      },
+      {
+        "Start": 0.003,
+        "End": 0.004,
+        "Percent": 99.96,
+        "Count": 87
+      },
+      {
+        "Start": 0.004,
+        "End": 0.005,
+        "Percent": 99.98666666666666,
+        "Count": 8
+      },
+      {
+        "Start": 0.005,
+        "End": 0.006,
+        "Percent": 99.99333333333334,
+        "Count": 2
+      },
+      {
+        "Start": 0.006,
+        "End": 0.007,
+        "Percent": 99.99666666666667,
+        "Count": 1
+      },
+      {
+        "Start": 0.007,
+        "End": 0.007108638,
+        "Percent": 100,
+        "Count": 1
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.0021481248570775213
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.0025768922936199408
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.0028341527555453922
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0029885090327006632
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0037931034482758977
+      }
+    ]
+  },
+  "ErrorsDurationHistogram": {
+    "Count": 0,
+    "Min": 0,
+    "Max": 0,
+    "Sum": 0,
+    "Avg": 0,
+    "StdDev": 0,
+    "Data": null
+  },
+  "Exactly": 0,
+  "Jitter": false,
+  "Uniform": true,
+  "NoCatchUp": true,
+  "RunID": 0,
+  "AccessLoggerInfo": "mode json to /var/lib/access-logs/access-log-file_proxyless-istio-2.json",
+  "ID": "2023-04-24-180032_bf162c1c_qps_100_c_10_d_300_proxyless_istio_2",
+  "RetCodes": {
+    "200": 30000
+  },
+  "IPCountMap": {
+    "10.108.44.167:80": 10
+  },
+  "Insecure": false,
+  "CACert": "",
+  "Cert": "",
+  "Key": "",
+  "UnixDomainSocket": "",
+  "URL": "http://istio-ingressgateway.istio-system/",
+  "NumConnections": 1,
+  "Compression": false,
+  "DisableFastClient": false,
+  "HTTP10": false,
+  "DisableKeepAlive": false,
+  "AllowHalfClose": false,
+  "FollowRedirects": false,
+  "Resolve": "",
+  "HTTPReqTimeOut": 3000000000,
+  "UserCredentials": "",
+  "ContentType": "",
+  "Payload": "",
+  "LogErrors": true,
+  "SequentialWarmup": false,
+  "ConnReuseRange": [
+    0,
+    0
+  ],
+  "NoResolveEachConn": false,
+  "Offset": 0,
+  "Resolution": 0.001,
+  "Sizes": {
+    "Count": 30000,
+    "Min": 223,
+    "Max": 223,
+    "Sum": 6690000,
+    "Avg": 223,
+    "StdDev": 0,
+    "Data": [
+      {
+        "Start": 223,
+        "End": 223,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "HeaderSizes": {
+    "Count": 30000,
+    "Min": 172,
+    "Max": 172,
+    "Sum": 5160000,
+    "Avg": 172,
+    "StdDev": 0,
+    "Data": [
+      {
+        "Start": 172,
+        "End": 172,
+        "Percent": 100,
+        "Count": 30000
+      }
+    ]
+  },
+  "Sockets": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "SocketCount": 10,
+  "ConnectionStats": {
+    "Count": 10,
+    "Min": 0.000171802,
+    "Max": 0.000737382,
+    "Sum": 0.003808525,
+    "Avg": 0.0003808525,
+    "StdDev": 0.00014769337561735797,
+    "Data": [
+      {
+        "Start": 0.000171802,
+        "End": 0.000737382,
+        "Percent": 100,
+        "Count": 10
+      }
+    ],
+    "Percentiles": [
+      {
+        "Percentile": 50,
+        "Value": 0.0004231708888888889
+      },
+      {
+        "Percentile": 75,
+        "Value": 0.0005802764444444445
+      },
+      {
+        "Percentile": 90,
+        "Value": 0.0006745397777777778
+      },
+      {
+        "Percentile": 99,
+        "Value": 0.0007310977777777777
+      },
+      {
+        "Percentile": 99.9,
+        "Value": 0.0007367535777777778
+      }
+    ]
+  },
+  "AbortOn": 0
+}

@@ -1,0 +1,472 @@
+{
+  "main_fortioclient": [
+    {
+      "timestamp": 1682359558,
+      "value": 13.34765625
+    },
+    {
+      "timestamp": 1682359573,
+      "value": 13.72265625
+    },
+    {
+      "timestamp": 1682359588,
+      "value": 13.72265625
+    },
+    {
+      "timestamp": 1682359603,
+      "value": 13.94921875
+    },
+    {
+      "timestamp": 1682359618,
+      "value": 14.18359375
+    },
+    {
+      "timestamp": 1682359633,
+      "value": 14.6640625
+    },
+    {
+      "timestamp": 1682359648,
+      "value": 15.19140625
+    },
+    {
+      "timestamp": 1682359663,
+      "value": 16.15625
+    },
+    {
+      "timestamp": 1682359678,
+      "value": 16.1015625
+    },
+    {
+      "timestamp": 1682359693,
+      "value": 16.375
+    },
+    {
+      "timestamp": 1682359708,
+      "value": 16.51171875
+    },
+    {
+      "timestamp": 1682359723,
+      "value": 16.7421875
+    },
+    {
+      "timestamp": 1682359738,
+      "value": 16.7421875
+    },
+    {
+      "timestamp": 1682359753,
+      "value": 16.9375
+    },
+    {
+      "timestamp": 1682359768,
+      "value": 17.3203125
+    },
+    {
+      "timestamp": 1682359783,
+      "value": 17.375
+    },
+    {
+      "timestamp": 1682359798,
+      "value": 17.546875
+    },
+    {
+      "timestamp": 1682359813,
+      "value": 17.69921875
+    },
+    {
+      "timestamp": 1682359828,
+      "value": 17.97265625
+    }
+  ],
+  "istio-proxy_istio-ingressgateway": [
+    {
+      "timestamp": 1682359558,
+      "value": 77.20703125
+    },
+    {
+      "timestamp": 1682359573,
+      "value": 76.890625
+    },
+    {
+      "timestamp": 1682359588,
+      "value": 76.8203125
+    },
+    {
+      "timestamp": 1682359603,
+      "value": 76.953125
+    },
+    {
+      "timestamp": 1682359618,
+      "value": 76.74609375
+    },
+    {
+      "timestamp": 1682359633,
+      "value": 77.05078125
+    },
+    {
+      "timestamp": 1682359648,
+      "value": 77.08984375
+    },
+    {
+      "timestamp": 1682359663,
+      "value": 76.9921875
+    },
+    {
+      "timestamp": 1682359678,
+      "value": 77.11328125
+    },
+    {
+      "timestamp": 1682359693,
+      "value": 77.1484375
+    },
+    {
+      "timestamp": 1682359708,
+      "value": 77.18359375
+    },
+    {
+      "timestamp": 1682359723,
+      "value": 77.19921875
+    },
+    {
+      "timestamp": 1682359738,
+      "value": 77.19921875
+    },
+    {
+      "timestamp": 1682359753,
+      "value": 77.21875
+    },
+    {
+      "timestamp": 1682359768,
+      "value": 76.98046875
+    },
+    {
+      "timestamp": 1682359783,
+      "value": 77.234375
+    },
+    {
+      "timestamp": 1682359798,
+      "value": 77.0234375
+    },
+    {
+      "timestamp": 1682359813,
+      "value": 76.41796875
+    },
+    {
+      "timestamp": 1682359828,
+      "value": 76.4140625
+    }
+  ],
+  "http-server_http-server": [
+    {
+      "timestamp": 1682359558,
+      "value": 16.85546875
+    },
+    {
+      "timestamp": 1682359573,
+      "value": 16.8203125
+    },
+    {
+      "timestamp": 1682359588,
+      "value": 16.828125
+    },
+    {
+      "timestamp": 1682359603,
+      "value": 16.0859375
+    },
+    {
+      "timestamp": 1682359618,
+      "value": 16.78125
+    },
+    {
+      "timestamp": 1682359633,
+      "value": 16.80859375
+    },
+    {
+      "timestamp": 1682359648,
+      "value": 16.78515625
+    },
+    {
+      "timestamp": 1682359663,
+      "value": 16.0390625
+    },
+    {
+      "timestamp": 1682359678,
+      "value": 16.9921875
+    },
+    {
+      "timestamp": 1682359693,
+      "value": 16.80859375
+    },
+    {
+      "timestamp": 1682359708,
+      "value": 16.78515625
+    },
+    {
+      "timestamp": 1682359723,
+      "value": 16.80859375
+    },
+    {
+      "timestamp": 1682359738,
+      "value": 16.81640625
+    },
+    {
+      "timestamp": 1682359753,
+      "value": 16.83203125
+    },
+    {
+      "timestamp": 1682359768,
+      "value": 16.8125
+    },
+    {
+      "timestamp": 1682359783,
+      "value": 16.8203125
+    },
+    {
+      "timestamp": 1682359798,
+      "value": 16.8203125
+    },
+    {
+      "timestamp": 1682359813,
+      "value": 16.9609375
+    },
+    {
+      "timestamp": 1682359828,
+      "value": 16.9609375
+    }
+  ],
+  "demo-service_demo-service": [
+    {
+      "timestamp": 1682359558,
+      "value": 13.91015625
+    },
+    {
+      "timestamp": 1682359573,
+      "value": 13.91015625
+    },
+    {
+      "timestamp": 1682359588,
+      "value": 13.91015625
+    },
+    {
+      "timestamp": 1682359603,
+      "value": 13.91015625
+    },
+    {
+      "timestamp": 1682359618,
+      "value": 14.16015625
+    },
+    {
+      "timestamp": 1682359633,
+      "value": 14.0390625
+    },
+    {
+      "timestamp": 1682359648,
+      "value": 13.04296875
+    },
+    {
+      "timestamp": 1682359663,
+      "value": 12.96875
+    },
+    {
+      "timestamp": 1682359678,
+      "value": 13.6015625
+    },
+    {
+      "timestamp": 1682359693,
+      "value": 13.4375
+    },
+    {
+      "timestamp": 1682359708,
+      "value": 13.90625
+    },
+    {
+      "timestamp": 1682359723,
+      "value": 13.91796875
+    },
+    {
+      "timestamp": 1682359738,
+      "value": 13.91796875
+    },
+    {
+      "timestamp": 1682359753,
+      "value": 13.91796875
+    },
+    {
+      "timestamp": 1682359768,
+      "value": 14.04296875
+    },
+    {
+      "timestamp": 1682359783,
+      "value": 14.04296875
+    },
+    {
+      "timestamp": 1682359798,
+      "value": 14.04296875
+    },
+    {
+      "timestamp": 1682359813,
+      "value": 13.91796875
+    },
+    {
+      "timestamp": 1682359828,
+      "value": 14.04296875
+    }
+  ],
+  "istio-proxy_http-server": [
+    {
+      "timestamp": 1682359558,
+      "value": 15.70703125
+    },
+    {
+      "timestamp": 1682359573,
+      "value": 15.58203125
+    },
+    {
+      "timestamp": 1682359588,
+      "value": 15.58203125
+    },
+    {
+      "timestamp": 1682359603,
+      "value": 15.69921875
+    },
+    {
+      "timestamp": 1682359618,
+      "value": 15.69921875
+    },
+    {
+      "timestamp": 1682359633,
+      "value": 15.8203125
+    },
+    {
+      "timestamp": 1682359648,
+      "value": 15.83203125
+    },
+    {
+      "timestamp": 1682359663,
+      "value": 15.7109375
+    },
+    {
+      "timestamp": 1682359678,
+      "value": 15.71484375
+    },
+    {
+      "timestamp": 1682359693,
+      "value": 15.71875
+    },
+    {
+      "timestamp": 1682359708,
+      "value": 15.71875
+    },
+    {
+      "timestamp": 1682359723,
+      "value": 15.5859375
+    },
+    {
+      "timestamp": 1682359738,
+      "value": 15.70703125
+    },
+    {
+      "timestamp": 1682359753,
+      "value": 15.8359375
+    },
+    {
+      "timestamp": 1682359768,
+      "value": 15.83984375
+    },
+    {
+      "timestamp": 1682359783,
+      "value": 15.7109375
+    },
+    {
+      "timestamp": 1682359798,
+      "value": 15.7109375
+    },
+    {
+      "timestamp": 1682359813,
+      "value": 15.71875
+    },
+    {
+      "timestamp": 1682359828,
+      "value": 15.71484375
+    }
+  ],
+  "istio-proxy_demo-service": [
+    {
+      "timestamp": 1682359558,
+      "value": 16.2890625
+    },
+    {
+      "timestamp": 1682359573,
+      "value": 16.1640625
+    },
+    {
+      "timestamp": 1682359588,
+      "value": 16.2890625
+    },
+    {
+      "timestamp": 1682359603,
+      "value": 16.16796875
+    },
+    {
+      "timestamp": 1682359618,
+      "value": 16.41796875
+    },
+    {
+      "timestamp": 1682359633,
+      "value": 16.41796875
+    },
+    {
+      "timestamp": 1682359648,
+      "value": 16.42578125
+    },
+    {
+      "timestamp": 1682359663,
+      "value": 16.29296875
+    },
+    {
+      "timestamp": 1682359678,
+      "value": 16.296875
+    },
+    {
+      "timestamp": 1682359693,
+      "value": 16.296875
+    },
+    {
+      "timestamp": 1682359708,
+      "value": 16.41796875
+    },
+    {
+      "timestamp": 1682359723,
+      "value": 16.30078125
+    },
+    {
+      "timestamp": 1682359738,
+      "value": 16.30078125
+    },
+    {
+      "timestamp": 1682359753,
+      "value": 16.1875
+    },
+    {
+      "timestamp": 1682359768,
+      "value": 16.19140625
+    },
+    {
+      "timestamp": 1682359783,
+      "value": 16.31640625
+    },
+    {
+      "timestamp": 1682359798,
+      "value": 16.20703125
+    },
+    {
+      "timestamp": 1682359813,
+      "value": 16.203125
+    },
+    {
+      "timestamp": 1682359828,
+      "value": 16.20703125
+    }
+  ],
+  "cilium_cilium-agent": [],
+  "query_url": "http://127.0.0.1:31450/api/v1/query_range?query=container_memory_usage_bytes&start=1682359558&end=1682359828&step=15"
+}

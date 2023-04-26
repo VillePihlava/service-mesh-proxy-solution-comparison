@@ -1,0 +1,43 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: istio-ingress-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - "*"
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: http-server
+spec:
+  gateways:
+  - istio-ingress-gateway
+  hosts:
+  - "*"
+  http:
+  - name: http-server
+    match:
+      - uri:
+          exact: "/"
+    route:
+    - destination:
+        host: http-server
+        port:
+          number: 8080
+  - name: prometheus-server
+    match:
+      - uri:
+          prefix: "/api"
+    route:
+    - destination:
+        host: prometheus-server.monitoring.svc.cluster.local
+        port:
+          number: 80

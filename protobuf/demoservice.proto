@@ -1,0 +1,19 @@
+// Copyright (C) 2023 Ville Pihlava
+// SPDX-License-Identifier: MIT
+
+syntax="proto3";
+
+package demoservice;
+
+service ConcatenationService {
+    rpc Concatenate (ConcatenationRequest) returns (ConcatenatedString) {}
+}
+
+message ConcatenationRequest {
+    string str1 = 1;
+    string str2 = 2;
+}
+
+message ConcatenatedString {
+    string str = 1;
+}
